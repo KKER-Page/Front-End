@@ -63,6 +63,15 @@
     /* background-size: 100% auto; */
     position: relative;
   }
+
+  /* body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+  } */
   /*
     6. Improve media defaults
   */
@@ -117,10 +126,6 @@
     text-decoration: none;
     /* opacity: 0.75; */
   }
-
-  /* a:hover {
-    opacity: 1;
-  } */
 
   @media only screen and (max-width: 1200px) {
     body {
