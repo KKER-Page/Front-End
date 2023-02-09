@@ -3,10 +3,6 @@ import 'react-slideshow-image/dist/styles.css'
 
 const spanStyle = {
     display: 'none',
-    // fontSize: '32px',
-    // padding: '20px',
-    // background: 'transparent',
-    // color: '#000000'
 }
 
 const divStyle = {

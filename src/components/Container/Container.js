@@ -1,28 +1,42 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
+import Footer from '../Footer/Footer';
+
+import KkerSocialMedias from "../KkerSocialMedias/KkerSocialMedias";
+import NavBar from '../NavBar/NavBar';
+
 const Container = (props) => {
-  return (
-    <div className="container2">
-            <div class="title">
-                <h1>{props.title}</h1>
-            </div>
-            <div className="content">
-                <div className="article">
-                    <h2>{props.title}</h2>
-                    <p>{props.p}</p>
-                    <p>
-                        <ul>
-                            <li>Vistos</li>
-                            <li>Alojamento</li>
-                            <li>Seguro de saúde</li>
-                        </ul>
-                    </p>
-                    <a href="#" className="button">Saber Mais</a>
+
+    useEffect(() => {
+        AOS.init({duration: 2000});
+    }, [])
+
+    return (
+        <>
+            <NavBar />
+            <div className="container-main">
+                <div data-aos="zoom-in">
+                    <h1>{props.title}</h1>
                 </div>
-                <div className="image-section">
-                    <img src="./images/uni.jpg" alt="" width="500" />
-                </div>
+                {
+                    props.data.dataRussia.map((item, index) => (
+
+                        <div key={index} className="container-wrapper" style={{flexDirection: `${item.divStyle}`}}>
+                            <div className="container-child" data-aos={item.animation1}>
+                                <p>
+                                    {item.text}
+                                </p>
+                                <KkerSocialMedias />
+                            </div>
+                            <img src={item.src} alt="Students image" data-aos={item.animation2}/>
+                        </div>
+                    ))
+                }
             </div>
-        </div>
-  )
+            <Footer />
+        </>
+    )
 }
 
-export default Container
+export default Container;
