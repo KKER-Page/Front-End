@@ -25,7 +25,7 @@ function GalleryCard(props) {
             <NavBar />
             <div style={{width: '100%', backdropFilter: 'blur(8px)'}}>
                 <div className="col" data-aos="zoom-in">
-                    {props.dataCard.dataCard.map((data, index) => ( 
+                    {props.dataCard.map((data, index) => ( 
                         <div key={index} className="card" style={{backgroundImage: `url(${data.bgImage})`}} >
                             <NavLink to={data.link}>
                                 <h2>{data.city}</h2>

@@ -4,7 +4,9 @@
 
 /* Header Style */
 header {
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   background: #0e314f;
   padding: 10px 7%;
   display: flex;
@@ -24,6 +26,18 @@ header .navbar ul li {
   float: left;
   font-size: 20px;
   text-align: center;
+}
+
+header .navbar ul li .icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+.down-icon {
+  display: none;
 }
 
 header .navbar ul li a {
@@ -62,8 +76,8 @@ header .navbar ul li ul li ul {
   top: 0;
 }
 
-header .navbar ul li:focus-within > ul,
-header .navbar ul li:hover > ul{
+header .navbar ul li:focus-within>ul,
+header .navbar ul li:hover>ul {
   display: initial;
   animation: appear .5s ease-in-out;
 }
@@ -93,7 +107,9 @@ section .container {
   margin: auto;
 }
 
-section .container h1, p {
+section .container 
+h1,
+p {
   max-width: 1000px;
   margin: auto;
 }
@@ -116,6 +132,16 @@ section .container .flags img {
   margin: 0 5px;
 }
 
+section .container .flag {
+  display: inline-block;
+  text-align: center;
+}
+
+section .container .flag p {
+  font-size: 10px;
+  opacity: 0.7;
+}
+
 /* Main */
 main {
   width: 100%;
@@ -132,7 +158,7 @@ main .container {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
   margin: 0 auto;
   gap: 1rem;
 }
@@ -173,12 +199,12 @@ main .container img {
 .container-main {
   background-color: #0e314fac;
   backdrop-filter: blur(5px);
-  padding: 7rem 0 3rem 0; 
+  padding: 7rem 0 3rem 0;
   margin: 0 auto;
   text-align: center;
 }
 
-.container-main h1{
+.container-main h1 {
   font-size: 30px;
   font-weight: 600;
   line-height: 40px;
@@ -223,12 +249,14 @@ footer {
   padding: 20px;
 }
 
-footer a, .social-component a {
+footer a,
+.social-component a {
   opacity: 0.7;
   cursor: pointer;
 }
 
-footer a:hover, .social-component a:hover {
+footer a:hover,
+.social-component a:hover {
   opacity: 1;
 }
 
@@ -309,6 +337,7 @@ footer p {
   align-items: center;
   z-index: 1;
 }
+
 .overlay img {
   display: block;
   max-width: 60%;
@@ -316,7 +345,8 @@ footer p {
   margin: 60px auto;
   box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.722);
 }
-.overlay > span {
+
+.overlay>span {
   position: absolute;
   top: 100px;
   right: 20px;
@@ -381,7 +411,7 @@ footer p {
 }
 
 .col p {
-    opacity: 0;
+  opacity: 0;
 }
 
 .card {
@@ -414,6 +444,7 @@ footer p {
     transform: scale(1);
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -424,6 +455,7 @@ footer p {
     transform: scale(1);
     opacity: 0;
   }
+
   0% {
     opacity: 1;
   }
@@ -440,6 +472,7 @@ footer p {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -459,16 +492,21 @@ footer p {
     width: 200px;
     height: 300px;
   }
+
+  main .container h1 {
+    font-size: 26px;
+  }
 }
 
-@media(max-width: 860px){
+@media(max-width: 860px) {
 
   .App {
     width: auto;
     margin: 0 auto;
   }
+
   header {
-    padding: 15px;
+    /* padding: 15px; */
     display: flex;
     justify-content: space-around;
 
@@ -480,7 +518,9 @@ footer p {
 
   header .navbar {
     position: absolute;
-    top: 100%; left: 0; right: 0;
+    top: 100%;
+    left: 0;
+    right: 0;
     background: #0e314f;
     display: none;
     animation: appear-out 1s ease-in-out;
@@ -490,6 +530,14 @@ footer p {
   header .navbar ul li {
     width: 100%;
     text-align: center;
+  }
+
+  .right-icon {
+    display: none;
+  }
+
+  .down-icon {
+    display: block;
   }
 
   header .navbar ul li ul {
@@ -513,14 +561,19 @@ footer p {
     width: 100%;
     left: 0;
   }
-  
+
   header .navbar ul li ul li ul li:hover {
     background: #006bc884;
   }
 
-  input:checked ~ .navbar, .navbar ul {
+  input:checked~.navbar,
+  .navbar ul {
     display: block;
     animation: appear .5s ease-in-out;
+  }
+
+  section .container {
+    margin-top: 5rem;
   }
 
 }
