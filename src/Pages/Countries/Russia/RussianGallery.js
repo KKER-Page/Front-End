@@ -1,4 +1,4 @@
-import dataCard from "./dataCard.json";
+import dataCard from "./dataCard";
 import GalleryCard from "../../../components/GalleryCard/GalleryCard";
 
 function RussianGallery() {
