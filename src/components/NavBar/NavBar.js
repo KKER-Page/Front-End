@@ -2,11 +2,12 @@ import { NavLink } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
+import { FaAngleDown, FaAngleRight } from "react-icons/fa";
 
 function NavBar() {
 
   useEffect(() => {
-    AOS.init({duration: 2000});
+    AOS.init({ duration: 1000 });
   }, [])
 
   return (
@@ -27,12 +28,12 @@ function NavBar() {
           </li>
 
           <li className="sub">
-            <NavLink to={``}> Países + </NavLink>
+            <NavLink className="icon" to={``}> Países <FaAngleDown /> </NavLink>
 
             {/* Sub-Menu */}
             <ul>
               <li className="sub">
-                <NavLink to={``}> Rússia + </NavLink>
+                <NavLink className="icon" to={``}> Rússia <FaAngleRight className="right-icon" /> <FaAngleDown className="down-icon" /> </NavLink>
                 <ul>
                   <li>
                     <NavLink to={`/russia_life`}> Vida na Rússia </NavLink>
@@ -47,7 +48,7 @@ function NavBar() {
               </li>
 
               <li className="sub">
-                <NavLink to={`/home`}> Polônia + </NavLink>
+                <NavLink className="icon" to={`/home`}> Polônia <FaAngleRight className="right-icon" /> <FaAngleDown className="down-icon" /> </NavLink>
 
                 {/* Sub-Menu 2 */}
                 <ul>
@@ -68,7 +69,7 @@ function NavBar() {
           </li>
 
           <li>
-            <NavLink to={``}> Sobre + </NavLink>
+            <NavLink className="icon" to={``}> Sobre <FaAngleDown /> </NavLink>
             <ul>
               <li>
                 <NavLink to={`/service`}> Serviços </NavLink>
@@ -83,7 +84,7 @@ function NavBar() {
           </li>
 
           <li>
-            <NavLink className="special" to={``}> Inscrição + </NavLink>
+            <NavLink className="icon" to={``}> Inscrição <FaAngleDown /> </NavLink>
 
             {/* Sub-Menu */}
             <ul>

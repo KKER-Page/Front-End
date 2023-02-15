@@ -14,9 +14,9 @@ const Footer = () => {
         <NavLink
           to={`javascript:void(0)`}
           onClick={() => (
-              window.location = 
-              'mailto:kklda37estudosnarussia@outlook.com'
-            )
+            window.location =
+            'mailto:kklda37estudosnarussia@outlook.com'
+          )
           }
         >
           <FaMailBulk />
@@ -42,7 +42,7 @@ const Footer = () => {
       </ul>
 
       <p>&copy;2018-2023 KKER</p>
-      
+
     </footer>
   )
 }

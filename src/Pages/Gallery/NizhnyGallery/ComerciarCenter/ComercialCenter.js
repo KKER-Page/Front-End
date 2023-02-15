@@ -1,13 +1,13 @@
 import Footer from "../../../../components/Footer/Footer";
 import Gallery from "../../../../components/Gallery/Gallery";
 import NavBar from "../../../../components/NavBar/NavBar";
-import data from "./ComercialCenter.json"
+import ComercialCenterData from "./ComercialCenterData"
 
 function ComercialCenter() {
     return <>
         <NavBar />
-        <Gallery 
-            data={data}
+        <Gallery
+            data={ComercialCenterData}
         />
         <Footer />
     </>

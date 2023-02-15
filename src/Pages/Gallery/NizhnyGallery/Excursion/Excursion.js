@@ -1,13 +1,13 @@
 import Footer from "../../../../components/Footer/Footer";
 import Gallery from "../../../../components/Gallery/Gallery";
 import NavBar from "../../../../components/NavBar/NavBar";
-import data from "./Excursion.json"
+import ExcursionData from "./ExcursionData"
 
 function Excursion() {
     return <>
         <NavBar />
-        <Gallery 
-            data={data}
+        <Gallery
+            data={ExcursionData}
         />
         <Footer />
     </>
