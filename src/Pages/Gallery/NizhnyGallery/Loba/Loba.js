@@ -1,13 +1,13 @@
 import Footer from "../../../../components/Footer/Footer";
 import Gallery from "../../../../components/Gallery/Gallery";
 import NavBar from "../../../../components/NavBar/NavBar";
-import data from "./loba.json"
+import lobaData from "./lobaData"
 
 function Loba() {
     return <>
         <NavBar />
-        <Gallery 
-            data={data}
+        <Gallery
+            data={lobaData}
         />
         <Footer />
     </>

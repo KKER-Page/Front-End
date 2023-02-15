@@ -1,13 +1,13 @@
 import Footer from "../../../../components/Footer/Footer";
 import Gallery from "../../../../components/Gallery/Gallery";
 import NavBar from "../../../../components/NavBar/NavBar";
-import data from "./Sports.json"
+import sportData from "./sportData"
 
 function Sports() {
     return <>
         <NavBar />
-        <Gallery 
-            data={data}
+        <Gallery
+            data={sportData}
         />
         <Footer />
     </>

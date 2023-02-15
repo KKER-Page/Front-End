@@ -6,7 +6,7 @@ import KkerSocialMedias from '../KkerSocialMedias/KkerSocialMedias'
 
 function Main(props) {
     useEffect(() => {
-        AOS.init({duration: 1000});
+        AOS.init({ duration: 1000 });
     }, [])
 
     return (
@@ -16,9 +16,9 @@ function Main(props) {
                     <h1 data-aos="fade-right">
                         {props.title}
                     </h1>
-                    <KkerSocialMedias data-aos="zoom-in"/>
+                    <KkerSocialMedias data-aos="zoom-in" />
                 </div>
-                <img src={props.src} alt="Students image" data-aos="fade-left"/>
+                <img src={props.src} alt="Students image" data-aos="fade-left" />
             </div>
         </main>
     )

@@ -33,33 +33,33 @@ function Routers() {
             <Switch>
 
                 <Route path="/home" element={<Home />} />
-                <Route path="/russia_life" element={<RussiaLife /> } />
-                <Route path="/russia_study" element={<RussiaStudy /> } />
-                <Route path="/poland_life" element={<PolandLife /> } />
-                <Route path="/poland_study" element={<PolandStudy /> } />
-                <Route path="/service" element={<Services /> } />
-                <Route path="/kker" element={<Kker /> } />
-                <Route path="/about" element={<AboutUs /> } />
-                <Route path="/req" element={<Requirements /> } />                
-                <Route path="/universities" element={<Universities /> } />
-                <Route path="/specialties" element={<Specialties /> } />
-                <Route path="/russian-gallery" element={<RussianGallery /> } />
-                <Route path="/poland-gallery" element={<PolandGallery /> } />
-                <Route path="/nizhny-gallery" element={<NizhnyGallery /> } />
-                <Route path="/first-years" element={<FirstYears /> } />
-                <Route path="/certificate" element={<Certificate /> } />
-                <Route path="/comercial-center" element={<ComercialCenter /> } />
-                <Route path="/excursion" element={<Excursion /> } />
-                <Route path="/fix-festival" element={<FixFestival /> } />
-                <Route path="/loba" element={<Loba /> } />
-                <Route path="/christmas" element={<Christmas /> } />
-                <Route path="/sports" element={<Sports /> } />
-                <Route path="/lands-caps" element={<LandsCapes /> } />
-                <Route path="/new-year" element={<NewYear /> } />
-                
-                <Route path="/caluga-gallery" element={<CalugaGallery /> } />
-                <Route path="/kirov-gallery" element={<KirovGallery /> } />
-                
+                <Route path="/russia_life" element={<RussiaLife />} />
+                <Route path="/russia_study" element={<RussiaStudy />} />
+                <Route path="/poland_life" element={<PolandLife />} />
+                <Route path="/poland_study" element={<PolandStudy />} />
+                <Route path="/service" element={<Services />} />
+                <Route path="/kker" element={<Kker />} />
+                <Route path="/about" element={<AboutUs />} />
+                <Route path="/req" element={<Requirements />} />
+                <Route path="/universities" element={<Universities />} />
+                <Route path="/specialties" element={<Specialties />} />
+                <Route path="/russian-gallery" element={<RussianGallery />} />
+                <Route path="/poland-gallery" element={<PolandGallery />} />
+                <Route path="/nizhny-gallery" element={<NizhnyGallery />} />
+                <Route path="/first-years" element={<FirstYears />} />
+                <Route path="/certificate" element={<Certificate />} />
+                <Route path="/comercial-center" element={<ComercialCenter />} />
+                <Route path="/excursion" element={<Excursion />} />
+                <Route path="/fix-festival" element={<FixFestival />} />
+                <Route path="/loba" element={<Loba />} />
+                <Route path="/christmas" element={<Christmas />} />
+                <Route path="/sports" element={<Sports />} />
+                <Route path="/lands-caps" element={<LandsCapes />} />
+                <Route path="/new-year" element={<NewYear />} />
+
+                <Route path="/caluga-gallery" element={<CalugaGallery />} />
+                <Route path="/kirov-gallery" element={<KirovGallery />} />
+
                 <Route path="*" element={<Navigate to="/home" />} />
 
             </Switch>

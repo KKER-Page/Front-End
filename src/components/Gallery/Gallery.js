@@ -9,7 +9,7 @@ function Gallery(props) {
     const [currentIndex, setCurrentIndex] = useState(null);
 
     useEffect(() => {
-        AOS.init({duration: 1000});
+        AOS.init({ duration: 1000 });
     }, [])
 
     const handelClick = (item, index) => {
@@ -54,11 +54,10 @@ function Gallery(props) {
     }
 
     return (
-        <div style={{width: '100%', background: 'rgba(0,0,0,0.7)'}}>
+        <div style={{ width: '100%', background: 'rgba(0,0,0,0.7)' }}>
             <div className='wrapper'>
-                {props.data.data.map((item, index) => (
+                {props.data.map((item, index) => (
                     <div key={index} className="wrapper-images">
-                        {/* <p>{item.id}</p> */}
                         <img
                             src={item.url}
                             alt=""

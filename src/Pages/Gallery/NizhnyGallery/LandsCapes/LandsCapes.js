@@ -1,13 +1,13 @@
 import Footer from "../../../../components/Footer/Footer";
 import Gallery from "../../../../components/Gallery/Gallery";
 import NavBar from "../../../../components/NavBar/NavBar";
-import data from "./LandsCapes.json"
+import LandsCapesData from "./LandsCapesData"
 
 function LandsCapes() {
     return <>
         <NavBar />
-        <Gallery 
-            data={data}
+        <Gallery
+            data={LandsCapesData}
         />
         <Footer />
     </>

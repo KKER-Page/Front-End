@@ -7,7 +7,7 @@ import { FaAngleDown, FaAngleRight } from "react-icons/fa";
 function NavBar() {
 
   useEffect(() => {
-    AOS.init({duration: 1000});
+    AOS.init({ duration: 1000 });
   }, [])
 
   return (

@@ -17,7 +17,7 @@ const divStyle = {
 const slideImages = [
     {
         url: '../images/content-images/uni-1.webp',
-        },
+    },
     {
         url: '../images/content-images/uni-1.jpg',
     },

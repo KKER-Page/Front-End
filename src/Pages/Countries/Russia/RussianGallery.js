@@ -3,7 +3,7 @@ import GalleryCard from "../../../components/GalleryCard/GalleryCard";
 
 function RussianGallery() {
     return (
-        <GalleryCard 
+        <GalleryCard
             dataCard={dataCard}
         />
     )

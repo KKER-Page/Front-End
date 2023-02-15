@@ -1,9 +1,9 @@
 import Container from "../../../components/Container/Container";
-import dataRussiaLife from "./dataRussiaLife.json"
+import dataRussiaLife from "./dataRussiaLife"
 
 function RussiaLife() {
     return (
-        <Container 
+        <Container
             title="Vida na Rússia"
             data={dataRussiaLife}
         />

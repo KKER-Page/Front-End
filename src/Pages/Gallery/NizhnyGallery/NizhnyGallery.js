@@ -1,9 +1,9 @@
-import dataCard from './dataCardNizhny.json';
+import dataCard from './dataCardNizhny';
 import GalleryCard from '../../../components/GalleryCard/GalleryCard';
 
 function NizhnyGallery() {
     return <>
-        <GalleryCard 
+        <GalleryCard
             dataCard={dataCard}
         />
     </>

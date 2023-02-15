@@ -1,4 +1,4 @@
-const Modal = ({ 
+const Modal = ({
     clickedImg, handelRotationRight, handelRotationLeft, setClickedImg }) => {
 
     const handelClick = (e) => {
