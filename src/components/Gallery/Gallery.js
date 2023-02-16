@@ -18,16 +18,16 @@ function Gallery(props) {
     };
 
     const handelRotationRight = () => {
-        const totalLength = props.data.data.length;
+        const totalLength = props.data.length;
         if (currentIndex + 1 >= totalLength) {
             setCurrentIndex(0);
-            const newUrl = props.data.data[0].url;
+            const newUrl = props.data[0].url;
             setClickedImg(newUrl);
             return;
         }
         const newIndex = currentIndex + 1;
-        const newUrl = props.data.data.filter((item) => {
-            return props.data.data.indexOf(item) === newIndex;
+        const newUrl = props.data.filter((item) => {
+            return props.data.indexOf(item) === newIndex;
         });
 
         const newItem = newUrl[0].url;
@@ -36,16 +36,16 @@ function Gallery(props) {
     }
 
     const handelRotationLeft = () => {
-        const totalLength = props.data.data.length;
+        const totalLength = props.data.length;
         if (currentIndex === 0) {
             setCurrentIndex(totalLength - 1);
-            const newUrl = props.data.data[totalLength - 1].url;
+            const newUrl = props.data[totalLength - 1].url;
             setClickedImg(newUrl);
         }
 
         const newIndex = currentIndex - 1;
-        const newUrl = props.data.data.filter((item) => {
-            return props.data.data.indexOf(item) === newIndex;
+        const newUrl = props.data.filter((item) => {
+            return props.data.indexOf(item) === newIndex;
         });
 
         const newItem = newUrl[0].url;

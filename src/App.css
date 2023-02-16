@@ -307,7 +307,6 @@ footer p {
   grid-auto-rows: 200px;
   grid-auto-flow: dense;
   gap: 1.5em;
-  border: 1px solid #fff;
 }
 
 .wrapper .wrapper-images img {
