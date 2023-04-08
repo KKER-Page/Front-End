@@ -30,7 +30,6 @@ function NavBar() {
           <li className="sub">
             <NavLink className="icon" to={``}> Países <FaAngleDown /> </NavLink>
 
-            {/* Sub-Menu */}
             <ul>
               <li className="sub">
                 <NavLink className="icon" to={``}> Rússia <FaAngleRight className="right-icon" /> <FaAngleDown className="down-icon" /> </NavLink>
@@ -50,7 +49,6 @@ function NavBar() {
               <li className="sub">
                 <NavLink className="icon" to={`/home`}> Polônia <FaAngleRight className="right-icon" /> <FaAngleDown className="down-icon" /> </NavLink>
 
-                {/* Sub-Menu 2 */}
                 <ul>
                   <li>
                     <NavLink to={`/poland_life`}> Vida na Polônia </NavLink>
@@ -86,7 +84,6 @@ function NavBar() {
           <li>
             <NavLink className="icon" to={``}> Inscrição <FaAngleDown /> </NavLink>
 
-            {/* Sub-Menu */}
             <ul>
               <li>
                 <NavLink to={`/req`}> Requisitos </NavLink>

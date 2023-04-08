@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes as Switch, Route, Navigate } from "react-router-dom";
 
-import Home from "../Pages/Home";
+import Home from "../Pages/Home/Home";
 import RussiaLife from "../Pages/Countries/Russia/RussiaLife";
 import RussiaStudy from "../Pages/Countries/Russia/RussiaStudy";
 import PolandLife from "../Pages/Countries/Poland/PolandLife";
