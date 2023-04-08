@@ -40,7 +40,7 @@ body {
 body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
-  background-image: url('../public/images/bg-desktop/bg-d11.jpg');
+  background-image: url('../../public/images/bg-desktop/bg-d11.jpg');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -91,7 +91,7 @@ a {
 
 @media only screen and (max-width: 1200px) {
   body {
-    background-image: url('../public/images/bg-mobile/bg-m3.jpg');
+    background-image: url('../../public/images/bg-mobile/bg-m3.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
